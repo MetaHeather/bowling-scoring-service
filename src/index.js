@@ -31,12 +31,12 @@ function scoreCalc(frames){
 //if there are 11 frames but the 10th frame did not include a strike or spare
 //then there is an error
 if(frames.length === 11 && frames[9][0] + frames[9][1] !== 10 ){
-  throw new Error('Error: Extra ball(s) thrown after final frame');
+  throw new Error('Extra ball(s) thrown without earning bonus');
 }
 
 //only 2 bonus balls allowed, any more is an error.
 if (frames.length > 11){
-  throw new Error('Error: Extra ball(s) thrown after final frame');
+  throw new Error('Extra ball(s) thrown after final frame');
 }
 
   return score;

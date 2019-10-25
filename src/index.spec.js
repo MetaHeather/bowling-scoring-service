@@ -42,5 +42,14 @@ describe('My bowling scorer', () => {
     expect(score).to.be.eql(84);
   });
 
+  it('should throw error if more than 11 "frames"', () => {
+    expect(() => {scoreCalc([[1,6], [3,5], [10,0], [3,6], [4,3], [1,4], [5,1], [6,3], [1,4], [10,0], [4,0], [0,2]])})
+    .to.throw('Extra ball(s) thrown after final frame')
+  });
+
+  it('should throw error if bonus balls thrown without 10th frame containing Strike or Spare', () => {
+    expect(() => {scoreCalc([[1,6], [3,5], [10,0], [3,6], [4,3], [1,4], [5,1], [6,3], [1,4], [7,2], [4,0]])})
+    .to.throw('Extra ball(s) thrown without earning bonus')
+  });
 
 });

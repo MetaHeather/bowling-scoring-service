@@ -1,8 +1,10 @@
 # Bowling Scoring Service Solution
 
 ## The two files that hold the solution can be found at:
-index.js which holds the scoring function <br>
-index.spec.jst which holds the tests
+| File           | Description                                              |
+|----------------|----------------------------------------------------------|
+| src/index.js       | contains scoreCalc() which is used for calculating score |
+| src/index.spec.jst | holds testing of scoreCalc()                             |
 
 ## Usage
 - `scoreCalc()` can be passed any number of bowling frames 
