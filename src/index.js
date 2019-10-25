@@ -2,7 +2,7 @@ function scoreCalc(frames){
   //10 frames with 2 possible bonus balls that count towards the 10th frames score
   let score = 0;
 
-  //counts the score not including bonus balls
+  //counts the score including bonus balls
   for(let i=0; i < frames.length && i < 10; i++) {
     //checks for strike and if next frame exists
     if(frames[i][0] === 10 && frames[i+1]){
