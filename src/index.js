@@ -1,5 +1,3 @@
-
-
 function scoreCalc(frames){
   //10 frames with 2 possible bonus balls that count towards the 10th frames score
   let score = 0;
@@ -44,3 +42,4 @@ if (frames.length > 11){
 } 
 
 export default scoreCalc;
+
