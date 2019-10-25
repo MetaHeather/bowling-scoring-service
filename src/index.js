@@ -27,22 +27,6 @@ function scoreCalc(frames){
     }
   } 
 
-//   //Checks for bonus score due to 10th frame strike or spare
-//   if (frames.length === 11){
-//     //if 10th frame [0] is strike count next 2 balls
-//     if(frames[9][0] === 10) {
-//       bonusScore += frames[10][0] + frames[10][1];
-//     }
-//     //if 10th frame is spare count next 1 ball
-//     else if(frames[9][0] + frames[9][1] === 10) {
-//       bonusScore += frames[10][0];
-//     }
-
-//     else {
-//       throw new Error('Error:  Extra ball(s) thrown after final frame, extraneous score not included in total');
-//     }
-//   }
-
 
 //if there are 11 frames but the 10th frame did not include a strike or spare
 //then there is an error

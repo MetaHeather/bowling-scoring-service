@@ -12,7 +12,10 @@ global.fetch = require('node-fetch');
 
 describe('My bowling scorer', () => {
   
-  
+  it('calculates correct score given full game ending in strike', () => {
+    let score = scoreCalc([[1,6],[3,5],[10,0],[3,6],[4,3],[1,4],[5,1],[6,3],[1,4],[10,0],[4,0]]);
+    expect(score).to.be.eql(89);
+  });
 
   it('calculates correct score given full game ending in spare', () => {
     let score = scoreCalc([[0,5],[2,4],[10,0],[3,3],[4,6],[1,5],[5,1],[6,3],[1,4],[7,3],[4,0]]);
@@ -23,7 +26,5 @@ describe('My bowling scorer', () => {
     let score = scoreCalc([[0, 1], [0, 8], [8, 1],[10,0],[10,0],[1,9],[10,0]]);
     expect(score).to.be.eql(89);
   });
-
-
 
 });
