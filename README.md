@@ -1,18 +1,15 @@
-# boilerplate-mocha-chai
-Boilerplate using mocha and chai TDD
+#Bowling Scoring Service Solution
 
-[![Build Status](https://travis-ci.org/luketevl/boilerplate-mocha-chai.svg?branch=master)](https://travis-ci.org/luketevl/boilerplate-mocha-chai)
+##The two files that hold the solution can be found at:
+index.js which holds the scoring function 
+index.spec.jst which holds the tests
 
-[![Coverage Status](https://coveralls.io/repos/github/luketevl/boilerplate-mocha-chai/badge.svg?branch=master)](https://coveralls.io/github/luketevl/boilerplate-mocha-chai?branch=master)
+##Usage
+scoreCalc() can be passed any number of bowling frames 
+The frames can be represented by arrays of 2 integers ranging from 1-10
+The function will correctly look for strikes and spares and adjust the score accordingly
 
-# FEATURES
-- ESLINT
-  - airbnb configured
-- husky HOOK
-  - prepush configured
-- MOCHA + CHAI + SINON + NODE FETCH + SINON-STUB-PROMISE + JSDOM
-  - Support es6 configured
-- NYC COVERAGE
-  - 90% functions and lines
-- TravisCI
-- Coveralls
+##Testing Technologies
+Mocha 
+Chai 
+Sinon
